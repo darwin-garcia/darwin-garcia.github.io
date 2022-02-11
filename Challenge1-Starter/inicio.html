@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<meta charset="UTF-8" http-equiv="X-UA-Compatible" name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+<html lang="es-CO"> 
+    <title>Codigo Secreto</title>
+    <!-- Titulo de Encabezado-->
+    <nav class="navbar navbar-dark bg-dark">
+        <h1 class="titulo">Codigo Secreto</h1> 
+    </nav>
+    <!-- Cuerpo del Contenido-->  
+    <body>
+        <main class="main">
+                <section class ="form box">
+                <!-- Columna izquierda o inferior -->
+                    <p>Ingrese el texto :</p>
+                    <p><i>Solo letras minusculas, sin acentos ni numeros</i></p>
+                    <!-- Cuadro de Texto para Ingresar -->
+                    <input type="text" class="text-input" aria-label="Default" aria-describedby="inputGroup-sizing-default" id="TextoIngresado" placeholder="Ingrese el texto aqui">
+                    <br><br>
+                    <!-- Botones de Accion-->
+                    <button type="button" class="btn" onclick="Encriptar()">Convertir</button>
+                    <button type="button" class="btn" onclick="Desencriptar()">Desencriptar</button>
+                    <button type="button" class="btn" onclick="Borrar1()">Borrar</button>
+                </section>
+            <!-- Columna derecha o inferior -->
+                <section class ="msg box">
+                    <p>Mensaje encriptado:</p>
+                    <br>
+                    <!-- Cuadro de Texto de Resultado-->
+                    <input type="text" class="text-input" aria-label="Default" aria-describedby="inputGroup-sizing-default" id="TextoConvertido">
+                    <br><br>
+                    <!-- Botones de Accion -->
+                    <button type="button" class="btn" onclick="Copiar()">Copiar</button>
+                    <button type="reset" class="btn" onclick="Borrar2()">Borrar</button>
+                </section>
+            </main>
+    </body><!-- Fin del cuerpo del Contenido-->
+    <!-- Pie de Pagina de Creditos -->
+    <footer class="footer">
+        Creado por Darwin Garcia ©2022.
+    </footer>
+    <!-- Llamada de CSS y Codigo JavaScript al final-->
+    <script src="./codigo.js"></script>
+    <link rel="stylesheet" href="./estilo.css">
+</html>
