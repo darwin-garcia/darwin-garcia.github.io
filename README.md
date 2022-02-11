@@ -1,1 +1,0 @@
-# darwin-garcia.github.io
