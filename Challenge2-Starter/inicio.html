@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" http-equiv="X-UA-Compatible" content="width=device-width, initial-scale=1.0" />
+    <title>Juego del Ahorcado</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+  </head>
+  <body>
+    <main class="word">
+        <span>A</span>
+        <span>H</span>
+        <span>O</span>
+        <span>R</span>
+        <span>C</span>
+        <span>A</span>
+        <span>D</span>
+        <span>O</span>
+      <!-- Tablero del Juego dentro del Index -->
+           
+    </main>
+    <div id="canvas">
+      <canvas hidden id="juego" width="1280px" height="800px"> </canvas>
+    </div> 
+    <section>
+      <!-- Botones del juego -->
+      <button class="glow-on-hover" id="iniciar-juego" onclick="IniciarJuego()">▶ ¡Iniciar Juego!</button>
+      <input class="text-input" type="text" id="TextoIngresado" placeholder="Escriba una nueva palabra">
+      <button type="button" id="GuardarTexto" class="glow-on-hover" onclick="GuardarTextoIntro()">+ Agregar Palabra</button> 
+      <br>
+      <a href="#" id="BorrarDiccionario">Borrar palabras guardadas</a> 
+      <br> 
+      <span> Este es un mensaje de prueba! </span>
+    </section>
+  </body>    
+    <footer class="footer-zone">
+      © 2022. Creado por Darwin García.
+    </footer>  
+    <script type="text/javascript" src="./Scripts/texto.js"></script>
+    <script type="text/javascript" src="./Scripts/textointro.js"></script>
+    <!-- Elementos Javascript del Juego -->
+    <script type="text/javascript" src="./Scripts/juego.js"></script>
+    <script type="text/javascript" src="./Scripts/canvas/grafico.js"></script>
+  
+</html>
