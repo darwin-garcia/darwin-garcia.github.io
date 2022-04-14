@@ -1,0 +1,398 @@
+img{
+    vertical-align: middle;
+}
+.carrusel{
+    display: inline;/* Mostrar las imagenes del carrusel de portada*/
+}
+.fade{
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+.carrusel-banner-container{
+    max-width: 960px;
+    position: relative;
+    margin: auto;
+}
+/* -> Seccion Superior (foto de perfil y nombre) */
+.item-superior{
+  background-color: rgba(0, 18, 97, 0.87);
+  margin: 0 auto;
+  width: 100%;
+}
+.recuadro-superior{
+  text-align: center;
+  padding: 4.7em;
+}
+.img-perfil{
+  max-width: 100%;
+  width: 256px;
+  object-fit: cover;
+  object-position: bottom;
+  border-radius: 50%;
+  border: 5px solid #fff;
+}
+.img-perfil:hover{
+ /* transform: scale(1.14);*/
+  box-shadow: 0px 0px 36px rgba(182, 72, 255, 0.925);
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+   -webkit-transition: all 0.2s ease-in;
+  transition: all 0.4s ease-in;
+}
+.titulo-superior{
+  text-align: center;
+  font-size: 36px;
+  color:#fff
+}
+.titulo-superior:hover{
+  color: rgb(108, 172, 255);
+  transition: 0.7s all;
+  text-shadow:0px 2px 38px #03a1fdbd;
+  -moz-transition: all 0.7s ease-in;
+  -o-transition: all 0.7s ease-in;
+  -webkit-transition: all 0.7s ease-in;
+  transition: all 0.7s ease-in;
+}
+.titulo-bienvenida{
+  text-align: center;
+  font-size: 28px;
+  color:#fff
+}
+.titulo-bienvenida:hover{
+  color: rgb(0, 225, 255);
+  transition: 0.7s all;
+  text-shadow:0px 2px 38px #03a1fdbd;
+  -moz-transition: all 0.7s ease-in;
+  -o-transition: all 0.7s ease-in;
+  -webkit-transition: all 0.7s ease-in;
+  transition: all 0.7s ease-in;
+}        
+.caja-texto-superior{
+  text-align: center;
+  margin: 0 auto;
+  width: 85%; 
+}
+.caja-texto-superior p{
+  color: #fff;
+  line-height: 1.7em; 
+}
+.caja-texto-superior a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+.caja-texto-superior a:hover{
+  color:#f00;
+  transition: 0.3s all;
+}
+.caja-texto-superior ul{
+  overflow: hidden;
+  list-style-type: none;
+  padding: 0;
+}
+.caja-texto-superior ul li{                       
+  margin: 0 8.5px;
+  padding: 3.6px;
+  list-style:none;
+}
+.btn-grande-superior{
+  background-color: #01a2ff;
+  color: white;
+  padding: 12px 45px;
+  border: none;
+  border-radius:8px;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 16px;
+}
+.btn-grande-superior:hover {
+  background-color: #fff;
+  transition: 0.5s all;
+  text-shadow:2px 2px 8px #01a2ff;
+  font-family: inherit;
+  transform: scale(1.14);
+}
+/* ----------------------------------------------------------Item de Skills o Habilidades -----------------------------------------------------*/
+.item-skills{
+    background-color: rgba(18, 51, 102, 0.76);
+    width: 100%;
+    float:inline-end;
+}
+/* --------------------------------------------------------- Item de Hobbies ----------------------------------------------------------- */
+.item-hobbies{
+    background-color: rgba(42, 145, 47, 0.87);
+    width: 100%;
+    float:inline-end;
+}
+/* ------------------------------------------------------ Item de Formacion Academica --------------------------------------------------------*/
+.item-formacion{
+    background-color: rgba(196, 197, 199, 0.76);
+    width: 100%;
+    float:inline-end;
+}
+.recuado-formacion{
+    margin: 0 auto;
+    padding: 60px;
+}
+.item-formacion h2{
+  text-align: center;
+}
+.item-formacion ul{
+    list-style-type: none;    
+    padding: 5px;
+    text-align: center;
+}
+.item-formacion ul li{
+    max-width: 300px;
+    max-height: 300px;
+    display: inline-block;
+    position: relative;
+    margin: 16px 16px 24px;
+    padding: 1.12em;
+       
+}
+/* ---------------------------------------- Item de Experiencia Profesional --------------------------------------------- */ 
+.item-exp{
+    background-color: #3498db;
+    width: 100%;
+    float:inline-end;
+    
+}
+.item-exp h2{
+  color:#fff;
+  font-size: 32px;
+}
+.recuadro-exp{
+    margin: 0 auto;
+    padding: 60px;    
+}
+.item-exp ul{
+  list-style-type: none;    
+  margin: 0;
+  padding:0;
+  text-align: center;
+}
+.item-exp ul li{
+  max-width: 340px;
+  max-height: 300px;
+  border-radius: 8px;
+  background-color: rgba(18, 51, 102, 0.76);
+  display: inline-block;
+  position: relative;
+  margin: 0 16px 24px;
+  padding: 1.12em;         
+}
+.item-exp legend{
+  font-size: 1.25em;
+  color:#fff;
+}
+.exp-img{
+  border-radius: 8px;
+  width: auto; 
+  max-height: 100%; 
+}
+.recuadro-imagen{
+  width: 280px;
+  height: 180px;  
+  border-radius: 8px;
+  margin: 0 auto;
+  padding: 12px;
+}/* Botones de acceso a los proyectos de programacion*/
+.exp-btn{
+  margin:4px;
+  padding: 12px 28px;
+  border-radius: 5px;
+  border:none;            
+  color:white;
+  cursor: pointer;
+  border: 1px solid #3498db;
+  background-color: transparent;
+  font-size: 14px;
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6);
+}
+.exp-btn:hover{
+  color:#fff;
+  background-color: rgba(42, 145, 47, 0.87);
+  text-shadow:2px 2px 8px #3498db;
+  transition: 0.5s all;
+}
+
+/* ----------------------------------------------------Item de Contacto--------------------------------------*/
+#item-contact {
+    display: table;
+    max-width: 84%;
+    padding: 0.6em;
+    margin: 0 auto;
+    box-sizing: border-box;
+    background: #fff;
+ }
+
+.contact-box1 {
+    display: table-cell; /* Modo de visualizacion de los elementos */
+    width: 30%; /* Tamaño ancho en esta columna*/
+    box-sizing: border-box;
+    background-repeat: no-repeat; /* No permite repetir la imagen en el mismo div*/
+    vertical-align: middle; /* Centrar la imagen*/ 
+ }
+ .contact-box2 {
+    display: table-cell; /* Modo de visualizacion de los elementos */
+    width: 70%; /* Tamaño ancho en esta columna*/  
+    padding: 0.5em;
+    box-sizing: border-box;
+ }
+ /* Espacio intermedio*/
+#inner-space {
+    display: table-cell;
+    padding: 10px; 
+ }
+ /* Imagen Responsive*/
+ .img-contact{
+    max-width: 100%;
+    height: 720px;
+    max-height: 100%;
+    border-radius: 10px;   
+}
+/* Mas elementos en contact.css */
+  /* ----------------------------Item de Redes Sociales---------------------------- */
+.item-social{
+    background-color: rgba(0, 18, 97, 0.87);
+    width: 100%;
+    float:inline-end;
+}
+.recuadro-social{
+    text-align: center;
+    margin: 0 auto;
+    padding: 60px;    
+}
+.recuadro-social ul{
+    list-style-type: none;    
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.recuadro-social ul li{    
+    display: inline-block;
+    width: 96px;
+    height: 96px;
+    border-radius: 54px;    
+    margin: 16px;
+    color: #fff;
+    
+}
+.recuadro-social ul li i{
+    font-size: 54px;
+    margin: 22px;
+    display:grid;
+}
+.recuadro-social ul li span{
+    text-decoration: none;
+
+}
+.recuadro-social ul li a{
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    padding-bottom: 60px;    
+}
+.titulo-social{
+    text-align: center;
+    color:#fff
+}
+/* Colores en botones de redes sociales al hacer click*/
+.social-click-fb:hover{
+    color: rgb(14, 90, 190);
+    padding-bottom: 4px;
+    transition: 0.7s all;
+    text-shadow:2px 2px 8px #3a8fff91;
+  -moz-transition: all 0.7s ease-in;
+  -o-transition: all 0.7s ease-in;
+  -webkit-transition: all 0.7s ease-in;
+  transition: all 0.7s ease-in;
+}
+.social-click-ig:hover{
+    color: rgb(238, 87, 17);
+    padding-bottom: 4px;
+    transition: 0.7s all;
+    text-shadow:2px 2px 8px #ff0606;
+  -moz-transition: all 0.7s ease-in;
+  -o-transition: all 0.7s ease-in;
+  -webkit-transition: all 0.7s ease-in;
+  transition: all 0.7s ease-in;
+}
+.social-click-tw:hover{
+    color: rgb(108, 172, 255);
+    padding-bottom: 4px;
+    transition: 0.7s all;
+    text-shadow:0px 2px 8px #03a1fdbd;
+  -moz-transition: all 0.7s ease-in;
+  -o-transition: all 0.7s ease-in;
+  -webkit-transition: all 0.7s ease-in;
+  transition: all 0.7s ease-in;
+}
+.social-click-in:hover{
+    color: rgb(126, 203, 255);
+    padding-bottom: 4px;
+    transition: 0.7s all;
+    text-shadow:2px 2px 8px #1831bec2;
+  -moz-transition: all 0.7s ease-in;
+  -o-transition: all 0.7s ease-in;
+  -webkit-transition: all 0.7s ease-in;
+  transition: all 0.7s ease-in;
+}
+.social-click-gt:hover{
+    color: rgb(150, 147, 160);
+    padding-bottom: 4px;
+    transition: 0.7s all;
+    text-shadow:2px 2px 8px #727272;
+  -moz-transition: all 0.7s ease-in;
+  -o-transition: all 0.7s ease-in;
+  -webkit-transition: all 0.7s ease-in;
+  transition: all 0.7s ease-in;
+}
+.social-click-yt:hover{
+    color: rgb(211, 27, 27);
+    padding-bottom: 4px;
+    transition: 0.7s all;
+    text-shadow:2px 2px 8px #ff3c3c;
+  -moz-transition: all 0.7s ease-in;
+  -o-transition: all 0.7s ease-in;
+  -webkit-transition: all 0.7s ease-in;
+  transition: all 0.7s ease-in;
+}
+@media (max-width:640px) {
+    #item-contact, .contact-box1, .contact-box2, #inner-space {
+        display: block;
+        width: auto;
+    }
+    #item-contact {
+        max-width: 100%;
+    }
+   .img-contact{
+        display: none;
+   }
+  .recuadro-exp{
+    width: 100%;
+    padding: 0px; 
+  }    
+    .recuadro-exp ul li{
+      max-width: 240px;
+      max-height: 200px;
+      border-radius: 0px;
+      background-color: transparent;
+      position: relative;
+      margin: 0 16px;
+      padding: 1.12em;
+      padding-top: 2.8rem;      
+  }
+  .recuadro-imagen{
+    width: 180px;
+    height: 120px;
+  }
+  .exp-btn{
+    border: none;
+    margin:4.5px;
+    font-size: 1.4em;
+  }
+}
