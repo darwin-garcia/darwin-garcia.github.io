@@ -1,70 +1,242 @@
-<!DOCTYPE HTML>
-<meta charset="UTF-8" http-equiv="X-UA-Compatible" name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+<!DOCTYPE html>
 <html lang="es-CO">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-  <title>
-
-  </title>  
-<body>
-    <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Darwin Garcia</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#"><i class="bi bi-house-door-fill"></i> Inicio <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="https://www.linkedin.com/in/darwingarc%C3%ADa/"><i class="bi bi-linkedin"></i> Linkedin</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <i class="bi bi-stack"></i> Proyectos de Programación
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="./Challenge1-Starter/index.html">Desafio 1</a>
-                <a class="dropdown-item" href="./Challenge2-Starter/index.html">Desafio 2</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
+<meta charset="UTF-8" http-equiv="X-UA-Compatible" name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Developer, Website, Mobile, Project, public figure">
+    <meta name="author" content="Darwin Garcia" />
+    <!-- Importacion de Estilos -->
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/sections.css">
+    <link rel="stylesheet" href="./styles/contact.css">
+    <!-- Titulo del sitio en el Navegador-->
+    <link rel="shortcut icon" type="image/x-icon" href="./images/icons/spartan.ico">
+    <title>👨‍💻 | Darwin Garcia | 🧮 𝙎𝙤𝙛𝙩𝙬𝙖𝙧𝙚 𝘿𝙚𝙫𝙚𝙡𝙤𝙥𝙚𝙧 |  </title>
+    <!-- Estructura visible-->
+    <body>
+        <!-- Cabecero del sitio (Menu Principal) -->
+        <header class="navegacion">
+            <!-- Mi Logotipo (Nombre de la Web)-->
+            <a class="nombre" href="#">Darwin Garcia</a>
+            <!-- Barra de Navegacion. Menu hacia la Derecha -->
+            <ul>
+                 <li><a href="#" target="_blank"><i class="fas fa-user"></i> Sobre mi</a></li>
+                 <li><a href="#" target="_blank"><i class="fas fa-medal"></i> Skills</a></li>
+                 <li><a href="#" target="_blank"><i class="fas fa-magic"></i> Hobbies</a></li>
+                 <li><a href="#" target="_blank"><i class="fas fa-user-graduate"></i> Formacion</a></li>
+                 <li><a href="#" target="_blank"><i class="fas fa-layer-group"></i>  Proyectos</a></li>
+                 <li><a href="#" target="_blank"><i class="fas fa-paper-plane"></i> Contacto</a></li>
+            </ul>       
+        </header><!-- Fin de Encabezado -->
+        <!-- Boton de Nav. El Menu Hamburguesa (Solo Responsive)-->
+         <input type="checkbox" class="abrirMenuLateral" id="abrirMenuLateral">
+         <label for="abrirMenuLateral" class="sidebarIconToggle">
+           <div class="menuHamburguesaLateral">
+               <div class="spinner diagonal part-1"></div>
+               <div class="spinner horizontal"></div>
+               <div class="spinner diagonal part-2"></div>
+           </div>
+         </label> 
+         <!-- Barra de Navegacion (Solo Responsive)-->
+         <nav id="MenuLateral"><!-- # -->   
+           <ul class="MenuLateralActivo">
+            <!-- Lista de enlaces para mostrar -->
+             <li><a href="#" target="_blank"><i class="fas fa-user"></i>  Sobre mi<span>¿Quien Soy?</span></a></li>
+             <li><a href="#" target="_blank"><i class="fas fa-medal"></i>  Skills<span>Habilidades de programacion</span></a></li>
+             <li><a href="#" target="_blank"><i class="fas fa-magic"></i>  Hobbies<span>Preferencias Personales</span></a></li>
+             <li><a href="#" target="_blank"><i class="fas fa-user-graduate"></i>  Formacion<span>Mis estudios Academicos</span></a></li>
+             <li><a href="#" target="_blank"><i class="fas fa-layer-group"></i>  Proyectos<span>Experiencia como programador</span></a></li>
+             <li><a href="#" target="_blank"><i class="fas fa-paper-plane"></i>  Contacto<span>Encuentrame aqui!</span></a></li>
+           </ul>
+         </nav>
+         <!-- ************************************************************************************************************************************************* -->
+        <!-- Inicio de la seccion principal (Toda la Web) -->
+        <!-- Carrusel de Inicio -->
+         <main class="cuerpo-sitio">
+            <!-- Sobre Mi -->
+            <section class="item-superior">
+              <div class="recuadro-superior">
+                  <img class="img-perfil" src="./images/photo-pic/user.jpg">
+                  <header class="titulo-superior"><h1>Darwin Garcia</h1></header>
+                  <header class="titulo-bienvenida"><h2>¡Bienvenido!</h2></header>
+                  <article class="caja-texto-superior">                      
+                      <p>Soy estudiante de desarrollo de software especializado en Frontend, creacion de aplicaciones y manejo de bases de datos. Adicionalmente soy ecnico de sistemas con 5 años de experiencia como persona independiente en el sector de tecnología informática. Cuento con conocimientos en administracion de redes, servidores Linux y Windows Server e implementacion masiva de equipos</p>
+                      <p>¡Construyo el PC Gaming y de diseño que necesitas al mejor precio y con calidad! No dudes en consultarme! </p>
+                      <br>
+                      <a class="btn-grande-superior" href="./files/CV Darwin Garcia.pdf"><i class="fa fa-file"></i> Mi Hoja de vida</a>
+                      <br>
+                      <ul>
+                          <li><a href="https://github.com/darwin-garcia"><i class="fab fa-github"></i> Github</a></li>
+                          <li><a href="https://www.linkedin.com/in/darwingarc%C3%ADa/"><i class="fab fa-linkedin-in"></i> LinkedIn</a></li>
+                      </ul>
+                      <br>
+                  </article>
               </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#">Sitio Web</a>
-            </li>
-          </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Ingresa el texto aqui." aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="bi bi-search"></i> Buscar</button>
-          </form>
-        </div>
-      </nav>
-</body>
+          </section>
+            <!-- Habilidades -->
+            <section class="item-skills">
+              <div class="recuadro-social">
+                <header class="titulo-social"><h2>Mis Habilidades en Lenguajes de Programación</h2></header>
+                <ul>
+                <li><p class="skill-click-html5" href="#"><i class="fab fa-html5"></i></i><!--HTML5 --></p><span>HTML5/CSS</span></li>
+                <li><p class="skill-click-js" href="#"><i class="fab fa-js-square"></i> <!--JavaScript --></p><span>JavaScript</span></li>
+                <li><p class="skill-click-php" href="#"><i class="fab fa-php"></i> <!--PHP--><span>PHP</span></p></li>
+                <li><p class="skill-click-rs" href="#"><i class="fab fa-react"></i><!--React --></p><span>React</span></li>
+                <li><p class="skill-click-py" href="#"><i class="fab fa-python"></i><!--Python --> </p><span>Python</span></li>
+                <li><p class="skill-click-java" href="#"><i class="fab fa-java"></i><!--Java--></p><span>Java</span></li>
+                </ul>
+            </div>
+            </section>
+            <!-- Hobbies -->
+            <section class="item-hobbies">
+              <div class="recuadro-social">
+                <header class="titulo-social"><h2>Mis pasatiempos favoritos</h2></header>
+                <ul>
+                  <li><img src="./images/profile/icons8-camping-64(1).png"></img><span>Acampar</span></li>
+                  <li><img src="./images/profile/icons8-cycle-64.png"></img><span>Ciclismo</span></li>
+                  <li><img src="./images/profile/icons8-guitar-64.png"></img><span>Musica</span></li>
+                  <li><img src="./images/profile/icons8-photo-camera-64.png"></img><span>Fotografia</span></li>
+                  <li><img src="./images/profile/icons8-puzzle-64.png"></img><span>Juegos de Inteligencia</span></li>
+                  <li><img src="./images/profile/icons8-book-and-pencil-64.png"></img><span>Leer</span></li>
+                </ul>
+              </div>
+            </section>
+            <!-- Formacion -->
+            <section class="item-formacion">
+              <div class="recuadro-formacion">
+                <h2>Formación Personal</h2>
+                <ul>
+                    <li>
+                        <div class="recuadro-imagen">
+                            <img class="exp-img" src="./images/experiences/sena.png">
+                        </div>
+                        <p><strong>SENA</strong></p>
+                        <p>Tecnólogo en Analisis y Desarrollo de Sistemas Informacion. 2019</p>                        
+                    </li>
+                    <li>
+                        <div class="recuadro-imagen">
+                            <img class ="exp-img" src="./images/experiences/platzi.png">
+                        </div>
+                        <p><strong>Platzi</strong></p>
+                        <p>Escuela de desarrollo Web</p>
+                        <p>2022</p>                           
+                    </li>
+                    <li>
+                        <div class="recuadro-imagen">
+                          <img class ="exp-img" src="./images/experiences/one.png">
+                        </div>
+                        <p><strong>Oracle + Alura</strong></p>
+                        <p>Frontend + JavaScript</p>
+                        <p>2022</p>                           
+                    </li>
+                </ul>
+            </section>
+            <!-- Proyectos -->
+            <section class="item-exp">
+              <div class="recuadro-exp">
+                <ul><h2>Experiencia Personal</h2>
+                    <li><legend>Encriptador</legend>
+                        <div class="recuadro-imagen">
+                            <img class="exp-img" src="./images/experiences/snap1.JPG">
+                        </div>
+                        <a class="exp-btn" href="https://github.com/darwin-garcia/darwin-garcia.github.io/tree/main/Challenge1-Starter"><i class="fas fa-folder"></i> Repositorio</a>
+                        <a class="exp-btn" href="https://darwin-garcia.github.io/Challenge1-Starter/inicio.html"><i class="fa fa-terminal"></i> Ejecutar</a>
+                    </li>
+                    <li><legend>Juego del ahorcado</legend>
+                        <div class="recuadro-imagen">
+                            <img class ="exp-img" src="./images/experiences/snap2.JPG">
+                        </div>
+                        <a class="exp-btn" href="https://github.com/darwin-garcia/darwin-garcia.github.io/tree/main/Challenge2-Starter"><i class="fas fa-folder"></i> Repositorio</a>
+                        <a class="exp-btn" href="https://darwin-garcia.github.io/Challenge2-Starter/inicio.html"><i class="fa fa-terminal"></i> Ejecutar</a>
+                    </li>
+                    <li><legend>Alura Geek Store</legend>
+                        <div class="recuadro-imagen">
+                            
+                        </div>
+                        <a class="exp-btn" href="https://github.com/darwin-garcia/darwin-garcia.github.io/tree/main/alura-geek-store"><i class="fas fa-folder"></i> Repositorio</a>
+                        <a class="exp-btn" href="https://darwin-garcia.github.io/alura-geek-store/index.html"><i class="fa fa-terminal"></i> Ejecutar</a>
+                    </li>
+                </ul>
+            </section>
+            <!-- Contacto -->
+            <section id="item-contact">
+              <div class="contact-box1">
+                <img class="img-contact" src="./images/backgrounds/code.jpg">
+              </div>
+             <div id="innerspace">&nbsp;</div>
+              <div class="contact-box2">
+               <div class="form-contact">
+                <form action="contacto">
+                             <h2><i class="far fa-comments"></i> Contacto</h2>
+                             <a>Si deseas contactarme, completa los siguientes datos y responderé a su solicitud</a>
+                             <br><br><!-- Saltos de Linea -->
+                             <label class ="texto-contact" for="nombre"><i class="fas fa-user"></i> Nombre</label>
+                             <input class="entrada-contact" type="text" id="nombre" name="nombre" placeholder="Su Nombre.." maxlength="64" required>
+                         
+                             <label class ="texto-contact" for="email"><i class="fas fa-envelope"></i> Correo</label>
+                             <input class="entrada-contact" type="text" id="email" name="email" placeholder="someone@mail.com" maxlength="64" required>
+                         
+                             <label class ="texto-contact" for="pais"><i class="fas fa-flag"></i> Pais</label>
+                             <select class="seleccion-pais" id="pais" name="pais">
+                               <option value="ar">Argentina</option>
+                               <option value="bo">Bolivia</option>
+                               <option value="br">Brasil</option>
+                               <option value="ca">Canada</option>
+                               <option value="ch">Chile</option>
+                               <option value="co">Colombia</option>
+                               <option value="ec">Ecuador</option>
+                               <option value="us">Estados Unidos</option>
+                               <option value="mx">Mexico</option>
+                               <option value="pa">Panama</option>
+                               <option value="py">Paraguay</option>
+                               <option value="pe">Peru</option>
+                               <option value="pr">Puerto Rico</option>
+                               <option value="rd">Republica Dominicana</option>
+                               <option value="uy">Uruguay</option>
+                               <option value="ve">Venezuela</option>
+                             </select>
+           
+                             <label class ="texto-contact" for="titulo"><i class="fas fa-user-edit"></i> Asunto</label>
+                             <input class="entrada-contact" type="text" id="titulo" name="titulo" placeholder="Titulo del Mensaje.." maxlength="64" required>
+                         
+                             <label class ="texto-contact" for="subject"><i class="fas fa-pen-nib"></i> Mensaje</label>
+                             <textarea class="mensaje-contact" id="subject" name="subject" placeholder="Coloca tu mensaje aqui!.." maxlength="400" required></textarea>
+                             
+                             <legend> Como le gustaría ser contactado?</legend>
+                             <fieldset class="via-contacto">
+                              <label><input type="radio" name="via-contacto" value=""><i class="fas fa-at"></i> E-mail</label><br>
+                              <label><input type="radio" name="via-contacto" value=""><i class="fab fa-whatsapp"></i> Whatsapp</label><br>
+                              <label><input type="radio" name="via-contacto" value=""><i class="fas fa-paper-plane"></i> Telegram</label><br>
+                              <label><input type="radio" name="via-contacto" value=""><i class="fas fa-phone"></i> Llamada telefonica</label>
+                            </fieldset>
 
-<main role="main" class="container">
-<div class="jumbotron">
-    <h1 class="display-4"><i class="bi bi-terminal-fill"></i> ¡Bienvenido!</h1>
-    <br>
-    <p class="lead"><i class="bi bi-globe2"></i> Este es mi sitio web de <i class="bi bi-stack"></i> Proyectos y repositorios de <i class="bi bi-github"></i> Github.</p>
-    <hr class="my-4">
-    <p><i class="bi bi-folder2-open"></i> Aqui puedes observar los proyectos realizados por mi.</p>
-    <p class="lead">
-        <i class="bi bi-file-earmark"></i> <a href="./Challenge1-Starter/inicio.html"> Alura Challenge - Desafio de Programacion 1 (Encriptador)</a>
-        <br>
-        <i class="bi bi-file-earmark"></i><a href="./Challenge2-Starter/inicio.html"> Alura Challenge - Desafio de Programacion 2 (Juego del ahorcado)</a>
-    </p>
-    <p class="lead">    
-      <a class="btn btn-primary btn-lg" href="#" role="button"><i class="bi bi-person"></i> Sobre Mi >_.</a>
-    </p>
-  </div>
-  </main>
-  <footer class="footer">
-    <div class="container">
-      <span class="text-muted">©2022. Creado por Darwin Garcia.</span>
-    </div>
-  </footer>
-
+                             <button class="boton-enviar" type="submit" form="contacto" onclick="validarDatos()" value="Enviar"><i class="fas fa-paper-plane"></i> Enviar</button>
+                           </form>
+                       </div>
+              </div>
+             </section>
+            <!-- Redes Sociales -->
+            <section class="item-social">
+            <div class="recuadro-social">
+                <header class="titulo-social"><h2>Mis Redes Sociales</h2></header>
+                <ul>
+                <li><a class="social-click-fb" href="https://www.facebook.com/idarwingarcia/"><i class="fab fa-facebook-f"></i><!--Facebook --></a><span>Facebook</span></li>
+                <li><a class="social-click-ig" href="https://www.instagram.com/itsdarwingarcia/"><i class="fab fa-instagram"></i> <!--Instagram --></a><span>Instagram</span></li>
+                <li><a class="social-click-tw" href="https://twitter.com/MrDarwinGarcia"><i class="fab fa-twitter"></i><!--Twitter--><span>Twitter</span></a></li>
+                <li><a class="social-click-in" href="https://www.linkedin.com/in/darwingarc%C3%ADa/"><i class="fab fa-linkedin-in"></i><!--Linkedin --></a><span>LinkedIn</span></li>
+                <li><a class="social-click-gt" href="https://github.com/darwin-garcia"><i class="fab fa-github"></i><!--Github --> </a><span>Github</span></li>
+                <li><a class="social-click-yt" href="https://www.youtube.com/channel/UCrdkb-dc4Szpz2s6W2OZx-Q"><i class="fab fa-youtube"></i><!--YouTube--></a><span>YouTube</span></li>
+                </ul>
+            </div>
+            </section>
+         </main>
+         
+         <!-- Pie de Pagina (Final del sitio) -->
+         <!-- ************************************************************************************************************************************************* -->
+         <footer class="credito-final">
+             <a>© 2022. Creado por Darwin Garcia.</a>
+         </footer><!-- Fin de Pie Pagina-->
+    </body><!-- Fin de la estructura visible -->
+    <script type='text/javascript' src="./scripts/carrousel-images.js"></script>
+    <script type='text/javascript' src="./scripts/contact-validate.js"></script>
 </html>
+       
+       
