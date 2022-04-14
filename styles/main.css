@@ -1,0 +1,220 @@
+/* Importar Fuentes (Tipo de letra)*/
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300&family=Montserrat:wght@200;300;400&family=Open+Sans&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css');
+@import url('https://use.fontawesome.com/releases/v5.15.4/css/all.css');
+/* ***************************************************************************************************************************************************************************/
+/* ------------------------------------------------------------------------- Cuerpo del Index* ----------------------------------------------------------------------------- */
+html, body {
+    overflow-x: hidden;
+    height: 100%;
+}
+body {
+    background: #fff;
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system,  'Montserrat','Fredoka', 'Open Sans', BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+}
+/* Pie de Pagina */
+footer{
+    width: 100%;
+    height: 60px;
+    line-height: 3.4em;
+    background-color: #000;
+    position: relative;
+    bottom: 0;
+    justify-content: center;
+    text-align: center;
+}
+footer a{
+    position: relative;
+    color:#fff;
+}
+/* Encabezado del sitio (Header) Menu Principal */
+.navegacion {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 100%;
+    box-shadow: none;
+    background-color: rgba(66, 62, 77, 0.692);
+    position: fixed;
+    height: 60px;
+    overflow: hidden;
+    z-index: 10;
+}
+.navegacion ul{
+    float: right;
+    overflow: hidden;
+    line-height: 32px;
+    padding-left: 5px; /* Tope izquierdo*/
+    padding-right: 15px; /* Tope derecho */
+}
+.navegacion ul li{
+    display: inline-block;
+    position: relative;
+    margin: 0 5px;
+    padding: 0;
+}
+.navegacion ul li a{
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    position: relative;
+}
+.navegacion ul li a:hover{
+    color: #349dff;
+    padding-bottom: 2px;
+    border-bottom: 2px solid #5c0af5;
+    transition: 0.3s all;    
+}
+/* Nombre de la pagina principal (Logotipo) */
+.nombre{
+    color:rgb(157, 211, 255);
+    text-decoration: none;
+    font-size: 1.86em;
+    font-weight: bold;
+    margin-left: 30px; /* Espacio margen izquierdo */
+    line-height: 58px; /* Posicion del texto (vertical)*/
+}
+.nombre:hover{
+    color: rgb(0, 119, 255);
+    padding-bottom: 7px;
+    transition: 0.8s all;
+}
+/* Main class (Todo el contenido) */
+.cuerpo-sitio {    
+    margin: 0 auto; /* Centrar elementos (x,y)*/
+    margin-top: 60px;/* Limite entre Header Nav y cuerpo del sitio */
+    
+}/* ----------------------------------------------------------------------------------------------*/
+/* Todas las modificaciones */
+/* Texto de Bienvenida (solo prueba) */
+
+/* *********************************************************************************************** */
+/* Menu Hamburguesa */
+.menuHamburguesaLateral{
+    visibility: hidden;
+}
+/* Nav Sidebar (Solo Responsive) Global */
+#MenuLateral {
+    visibility: hidden;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    width: 60vh;
+    margin-top: 60px;
+    transform: translateX(-80vh);
+    transition: transform 250ms ease-in-out;
+    background-color: rgba(0, 0, 0, 0.85);
+}
+.MenuLateralActivo{
+    margin:0;
+    padding:0;
+    border-top: 1px solid rgba(255, 255, 255, 0.10);
+}
+.MenuLateralActivo li{
+    list-style: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 20px;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+}
+.MenuLateralActivo li span{
+    display: block;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.50);
+}
+.MenuLateralActivo li a{
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+}
+/* Aqui permite abrir el menu desde el checked. CUANDO HACE CLICK  */
+/* abrirMenuLateral hace parte del <label for>. Conecta con en <input id> */
+.abrirMenuLateral:checked ~ #MenuLateral {
+    transform: translateX(0);
+}
+
+.abrirMenuLateral {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    display: none;
+}
+/* Label */
+.sidebarIconToggle {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    cursor: pointer;
+    position: absolute;
+    z-index: 99;
+    height: 100%;
+    width: 100%;
+    top: 22px;
+    left: 15px;
+    height: 22px;
+    width: 22px;
+}
+/* Lineas de dibujo del menu Hamburguesa */
+.spinner {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background-color: #fff;
+}
+.horizontal {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+    margin-top: 3px;
+}
+.diagonal.part-1 {
+    position: relative;
+    transition: all 0.3s;
+    box-sizing: border-box;
+    float: left;
+}
+.diagonal.part-2 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+    margin-top: 3px;
+}
+/*Efectos del boton cierre y menu Hamburguesa (Solo Responsive) */
+.abrirMenuLateral:checked ~  .sidebarIconToggle > * .horizontal {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    opacity: 0;
+}
+.abrirMenuLateral:checked ~  .sidebarIconToggle > * .diagonal.part-1 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    transform: rotate(135deg);
+    margin-top: 8px;
+}
+.abrirMenuLateral:checked ~  .sidebarIconToggle > * .diagonal.part-2 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    transform: rotate(-135deg);
+    margin-top: -9px;
+}
+/* --------------------------------------------------------------------------- Navegacion Movil (Ajustes) ------------------------------------------------------------------- */
+@media (max-width:875px){
+    .navegacion ul{
+        display: none;
+    }
+    .menuHamburguesaLateral{
+        visibility: visible;
+    }
+    #MenuLateral{
+        visibility: visible;
+    }
+    .nombre{
+        margin-left: 55px;
+    }
+}
