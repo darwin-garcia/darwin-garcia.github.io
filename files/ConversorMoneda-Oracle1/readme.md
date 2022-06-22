@@ -1,6 +1,6 @@
 #challengeoneconversorlatam | Java | Conversor de Moneda
 
-Conversor de Moneda y Medidas 
+# Conversor de Moneda y Medidas 
 ---
 ## Descripcion 
 Este programa permite la conversion de valores monetarios expresados en Dolares, Euros, Yenes, Wones, Peso Argentino, Mexicano, Chileno  desde el peso colombiano.
@@ -9,12 +9,12 @@ Adicionalmente permite convertir medidas en metros, pulgadas y pies
 ##  Primeros pasos de Instalacion
 Descarga toda la carpeta del proyecto o puedes ejecutar el archivo Conversor.jar directamente desde el escritorio. (Debes instalar el Java JRE version 16)
 ## Tecnologias Utilizadas
--Java JDK 16
--IntelliJ IDEA Comunnity 2021.1
+* Java JDK 16
+* IntelliJ IDEA Comunnity 2021.1
 ---
 ## ⚠️Dato Importante
 Use la version Java reciente 16
 Puede utilizarse en Eclipse, IntelliJ IDEA Comunnity (requiere Java mas reciente) y NetBeans 8.2 con el ultimo JDK
 Toda la interfaz utiliza bibliotecas java.awt y javax.swing
 
-
+<video src='../main/files/video-challenges/Conversor%20Java%20ONE%20Challenge%201.mp4' width=180/>
