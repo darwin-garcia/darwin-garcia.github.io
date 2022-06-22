@@ -17,4 +17,4 @@ Use la version Java reciente 16
 Puede utilizarse en Eclipse, IntelliJ IDEA Comunnity (requiere Java mas reciente) y NetBeans 8.2 con el ultimo JDK
 Toda la interfaz utiliza bibliotecas java.awt y javax.swing
 
-<video src='../main/files/video-challenges/Conversor%20Java%20ONE%20Challenge%201.mp4' width=180/>
+<video src='../../main/files/video-challenges/Conversor%20Java%20ONE%20Challenge%201.mp4' width=180/>
